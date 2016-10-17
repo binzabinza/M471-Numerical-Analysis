@@ -1,4 +1,5 @@
-function NewtonDD(x, f)
+%Newton's Divided Difference Method
+function newtonDD(x, f)
     [row, col] = size(x);
     F(1:col, 1:col) = 0;
     %populate the first column
