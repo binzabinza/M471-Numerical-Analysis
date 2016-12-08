@@ -8,7 +8,7 @@ function compSimpson(a, b, n, f)
     XI1 = 0;            %Summation of f(x(2i-1))
     XI2 = 0;            %Summation of f(x(2i))
     
-    for i=1:n
+    for i=1:n-1
         X = a+i*h;
         if (mod(i, 2)==0)
             XI2 = XI2 + f(X);
